@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin | Mavi Darıca</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header>
+  <h1>🛠 Admin Panel</h1>
+  <p>Mavi Darıca içerik yönetim sistemi</p>
+</header>
+
+<main>
+
+  <!-- ÜST KONTROL -->
+  <section class="panel-top">
+    <button id="addNewsBtn">+ Haber Ekle</button>
+  </section>
+
+  <!-- HABER LİSTESİ -->
+  <section class="news-grid" id="newsGrid">
+
+    <div class="news-card" data-id="1">
+      <h3>Darıca’da fırtına etkili oldu</h3>
+      <p>Özet haber metni burada...</p>
+    </div>
+
+    <div class="news-card" data-id="2">
+      <h3>Elektrik kesintileri uzadı</h3>
+      <p>Özet haber metni burada...</p>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- SAĞ TIK MENÜ -->
+<div id="contextMenu" class="context-menu">
+  <button id="editBtn">✏️ Haber Düzenle</button>
+  <button id="deleteBtn">🗑 Haber Sil</button>
+</div>
+
+<!-- MODAL (HABER EKLE/DÜZENLE) -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <h2>Haber</h2>
+
+    <input type="text" id="titleInput" placeholder="Başlık">
+    <textarea id="descInput" placeholder="Açıklama"></textarea>
+
+    <button id="saveBtn">Kaydet</button>
+    <button onclick="closeModal()">İptal</button>
+  </div>
+</div>
+
+<script>
+
+if(localStorage.getItem("role") !== "admin"){
+
+  window.location.href = "../index.html";
+
+}
+
+</script>
+<script src="admin.js"></script>
+</body>
+</html>

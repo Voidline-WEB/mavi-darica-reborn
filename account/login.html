@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mavi Darıca | Giriş Yap</title>
+  <link rel="icon" type="image/png" href="../favicon.png?v=1">
+  <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+<div class="auth-container">
+
+  <h1>Giriş Yap</h1>
+
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="E-posta" required>
+    <input type="password" id="password" placeholder="Şifre" required>
+
+    <button type="submit">Giriş Yap</button>
+  </form>
+
+  <p class="switch">
+    Hesabın yok mu?
+    <a href="signin.html">Kaydol</a>
+  </p>
+
+</div>
+
+<script src="../auth.js" type="module"></script>
+<script type="module" src="../auth.js"></script>
+
+<div id="loadingBox" class="loading-box">
+
+  <div class="spinner"></div>
+
+  <p>Onaylandı, lütfen bekleyiniz...</p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mavi Darıca | Kaydol</title>
+  <link rel="icon" type="image/png" href="../favicon.png?v=1">
+  <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+  <div class="auth-container">
+
+    <div class="auth-box">
+
+      <h1>Hesap Oluştur</h1>
+      <p>Mavi Darıca topluluğuna katıl</p>
+
+      <form id="signupForm">
+
+        <input type="text" id="username" placeholder="Kullanıcı adı" required>
+
+        <input type="email" id="email" placeholder="E-posta" required>
+
+        <input type="password" id="password" placeholder="Şifre" required>
+
+        <button type="submit">Kaydol</button>
+
+      </form>
+
+      <div class="auth-footer">
+        Zaten hesabın var mı?
+        <a href="login.html">Giriş yap</a>
+      </div>
+
+      <div id="loadingBox" class="loading-box">
+
+  <div class="spinner"></div>
+
+  <p>Onaylandı, lütfen bekleyiniz...</p>
+
+</div>
+
+    </div>
+
+  </div>
+
+  <script src="auth.js"></script>
+  <script type="module" src="../auth.js"></script>
+
+</body>
+</html>

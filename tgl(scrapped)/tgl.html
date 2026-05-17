@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>?</title>
+<link rel="stylesheet" href="beratakkurt.css">
+</head>
+<body>
+
+<div class="container">
+  <img src="beratakkurt.jpg" alt="Berat Akkurt" id="akkurt">
+
+  <div class="textbar" id="textbar">
+    ...
+  </div>
+</div>
+
+<script>
+const akkurt = document.getElementById("akkurt");
+const textbar = document.getElementById("textbar");
+
+let step = 0;
+const texts = [
+  "Neden adımı yazdın?",
+  "Cezasını çok yakında çekeceksin!"
+];
+
+akkurt.addEventListener("click", () => {
+  if (step < texts.length) {
+    textbar.textContent = texts[step];
+    step++;
+  } else {
+    window.location.href = "index.html";
+  }
+});
+</script>
+
+</body>
+</html>
